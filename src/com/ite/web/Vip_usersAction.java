@@ -49,6 +49,12 @@ public class Vip_usersAction {
 		return "error";
 	}
 	
+	//根据状态查询数据
+	public String findByStatus(){
+		List list = vipService.findByStatus(v.getStatus());
+		ActionContext.getContext().put("clist", list);
+		return "list";
+	}
 	
 	
 	public Vip_users getV() {

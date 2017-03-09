@@ -11,6 +11,7 @@
 		<action name="vipAction_*" method="{1}" class="vipAction">
 			<result name="list">${pageContext.request.contextPath}/pages/showList.jsp</result>
 			<result name="input" type="redirectAction">${pageContext.request.contextPath}/vipAction_findAll</result>
+			
 		</action>
 	</package>
 </struts>

@@ -15,11 +15,9 @@
 				<div style="float: right;">
 					<form action="">
 						查询：
-						<select>
-							<option value="">请选择</option>
-							<option value="0">上架</option>
-							<option value="1">上架</option>
-						</select>
+						<a href="${pageContext.request.contextPath}/vipAction_findByStatus?v.status=0">上架</a>
+						<a href="${pageContext.request.contextPath}/vipAction_findByStatus?v.status=1">下架</a>
+						<a href="${pageContext.request.contextPath}/vipAction_findAll">全部</a>
 					</form>
 				</div>
 			</td>

@@ -48,7 +48,13 @@ public class Vip_usersService {
 		else{s=0;}
 		String sql = "update tb_Vip_users set status="+s+" where item_id="+id;
 		return vipDao.executionSQL(sql).executeUpdate()>0?true:false;
-		
+	}
+	
+	
+	//SQL根据状态查询数据
+	public List findByStatus(int s){
+		String sql = "select * from tb_Vip_users where status="+s;
+		return vipDao.executionSQL(sql).list();
 	}
 	
 	public void setVipDao(Vip_usersDao vipDao) {
