@@ -8,9 +8,9 @@ create table tb_Vip_users
 );
 create sequence my_seq;
 
-insert into tb_Vip_users values(my_seq.nextval,'三星s7',6999,sysdate,0);
-insert into tb_Vip_users values(my_seq.nextval,'魅蓝5s',999,sysdate,0);
-insert into tb_Vip_users values(my_seq.nextval,'华为p9',5999,sysdate,0);
+insert into tb_Vip_users values(my_seq.nextval,'涓夋槦s7',6999,sysdate,0);
+insert into tb_Vip_users values(my_seq.nextval,'榄呰摑5s',999,sysdate,0);
+insert into tb_Vip_users values(my_seq.nextval,'鍗庝负p9',5999,sysdate,0);
 insert into tb_Vip_users values(my_seq.nextval,'iPhone7',6999,sysdate,0);
 insert into tb_Vip_users values(my_seq.nextval,'iPhone4',800,sysdate,1);
 commit;
